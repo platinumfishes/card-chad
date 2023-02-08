@@ -20,116 +20,116 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-top: 60px;
 }
 
-.card{
-  border-radius: 24px;
-  border: 3px solid #041E42;
-  padding: 8px;
-  width: 400px;
+.alt {
+  width: 500px;
+  height: 565px;
+  border: 14px solid #72fc79;
+  background-color: cyan;
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+}
+.topbuttons {
   display: block;
   margin: auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 8px 24px #999;
-  background-color: lightgrey;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.textbox{
-  font-size: 15px;
-  margin-left: 112px;
-  text-align: right;
-  border-radius: 24px;
-}
-
-.description{
-  text-shadow: -1px 1px 2px #FFFFFF,
-				  1px 1px 2px #FFFFFF,
-				  1px -1px 0 #FFFFFF,
-				  -1px -1px 0 #FFFFFF;
-}
-
-.haxbtn{
-  display:inline-block;
-  text-align: center;
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 32px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  visibility: visible;
-  padding-top: 10px;
-  margin-right: 32px;
-}
-
-.haxbtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.haxbtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.title{
-  color: white;
+button {
   font-size: 24px;
-  text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-color: #94FEFB;
+  font-family: "Monaco", Monospace;
+  border: 4px solid pink;
+  border-radius: 20px;
 }
 
-.giaImg{
-  width: 200px;
-  border-radius: 24px;
-  box-shadow: 0px 10px 24px #999;
-  float: left;
+/*BELOW IS ALL ORIGINAL CARD SPACE*/
+
+.card {
+  width: 500px;
+  height: 565px;
+  border: 14px solid pink;
+  background-color: #FB94FE;
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
 }
 
-.outsideBtn{
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
+.header {
+  color: #94FEFB;
+  font-family: "Lucida Console", monospace;
+  font-size: 30px;
+  border: 2px solid;
+  border-radius: 16px;
+  Margin: 16px;
+  padding: 8px;
+  background-color: #ff66cc;
+}
+
+.bod {
+  color: blue;
+  font-family: "Monaco", Monospace;
   font-size: 20px;
-  width: 120px;
-  height: 50px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  visibility: hidden;
 }
 
-.outsideBtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+.img {
+  width: 460px;
+  height: 250px;
+  border: 2px inset #94FEFB;
+  padding: 8px;
+  background-color: #ff66cc;
+  border-radius: 20px;
 }
 
-.outsideBtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.basic{
+.button {
   background-color: hotpink;
+  color: #94FEFB;
+  padding: 8px;
+  border: 2px dashed #94FEFB;
+  font-family: "Monaco", Monospace;
+  visibility: hidden;
+  border-radius: 24px;
+  margin-top: 0px;
+  font-size: 20px;
+}
+.button:hover,
+.button:focus,
+.topbuttons button:hover,
+.topbuttons button:focus {
+  color: hotpink;
+  background-color: #94FEFB;
+}
+.button:active,
+.topbuttons button:active {
+  color: #94FEFB;
+  background-color: #ec72fc
 }
 
-.hoverCard{
-  border: 3px solid purple;
-  box-shadow: 0px 8px 24px yellow;
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .button {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: auto;
+    height: auto;
+  }
+  .img {
+    width: 90%;
+    height: auto;
+  }
+  .header{
+    font-size: 4vw;
+  }
+  .bod {
+    font-size: 4vw;
+  }
 }
 
 input:checked + label + .description { display:none; }
