@@ -31,7 +31,7 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .topbuttons {
   display: block;
-  margin: auto;
+  text-align: center;
 }
 
 button {
